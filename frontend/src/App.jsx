@@ -15,9 +15,10 @@ import ExamAttempt from "./pages/exam/ExamAttempt";
 //admin exam creation 
 import CreateExam from "./pages/admin/CreateExam";
 import AddQuestion from "./pages/admin/AddQuestion";
+//manage exam
 import ManageExams from "./pages/admin/ManageExams";
 import ManageQuestions from "./pages/admin/ManageQuestions";
-
+import ProctoringDashboard from "./pages/admin/ProctoringDashboard";
 //results
 import Results from "./pages/exam/Results";
 // Route Guards
@@ -54,6 +55,7 @@ function App() {
   path="/admin/questions/:examId"
   element={<ManageQuestions />}
 />
+<Route path="/admin/proctoring" element={<ProctoringDashboard />} />
 </Route>
       </Routes>
     </BrowserRouter>
